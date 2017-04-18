@@ -113,8 +113,9 @@ viewHeader title =
 viewFooter : Html Msg
 viewFooter =
     footer []
-        [ a [ href "http://github.com" ]
-            [ text "E-commerce UI" ]
+        [ a [ href "http://github.com" ] [ text "E-commerce API" ]
+        , span [] [ text " | " ]
+        , a [ href "http://github.com" ] [ text "Ecommerce UI" ]
         ]
 
 
