@@ -9294,7 +9294,7 @@ var _user$project$Inventory$viewFooter = A2(
 			_elm_lang$html$Html$a,
 			{
 				ctor: '::',
-				_0: _elm_lang$html$Html_Attributes$href('http://github.com'),
+				_0: _elm_lang$html$Html_Attributes$href('https://github.com/joestraitiff/ecom-api'),
 				_1: {ctor: '[]'}
 			},
 			{
@@ -9318,7 +9318,7 @@ var _user$project$Inventory$viewFooter = A2(
 					_elm_lang$html$Html$a,
 					{
 						ctor: '::',
-						_0: _elm_lang$html$Html_Attributes$href('http://github.com'),
+						_0: _elm_lang$html$Html_Attributes$href('https://github.com/joestraitiff/ecom-ui'),
 						_1: {ctor: '[]'}
 					},
 					{
