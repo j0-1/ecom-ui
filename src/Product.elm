@@ -39,8 +39,8 @@ viewProduct product =
     li []
         [ span [] [ text "Product #" ]
         , span [] [ text (toString product.id) ]
-        , p [] [ text product.description ]
         , Image.viewImageList product.images
+        , p [] [ text product.description ]
         , Variant.viewVariantList product.variants
         ]
 

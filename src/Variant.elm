@@ -30,14 +30,21 @@ variantDecoder =
 
 viewVariant : Variant -> Html msg
 viewVariant variant =
-    div [ class "variants" ]
-        [ span [] [ text (toString variant.inventory_count) ]
-        , span [] [ text " " ]
-        , span [] [ text (toString variant.waist) ]
-        , span [] [ text " " ]
-        , span [] [ text (toString variant.length) ]
-        , span [] [ text " " ]
-        , span [] [ text variant.style ]
+    tr []
+        [ td [] [ text (toString variant.inventory_count) ]
+        , td [] [ text (toString variant.waist) ]
+        , td [] [ text (toString variant.length) ]
+        , td [] [ text variant.style ]
+        ]
+
+
+viewVariantHeader : Html msg
+viewVariantHeader =
+    tr []
+        [ th [] [ text "Inventory Count" ]
+        , th [] [ text "Waist" ]
+        , th [] [ text "Length" ]
+        , th [] [ text "Style" ]
         ]
 
 
@@ -46,5 +53,8 @@ viewVariantList variants =
     let
         listOfVariants =
             List.map viewVariant variants
+
+        variantsTable =
+            viewVariantHeader :: listOfVariants
     in
-        ul [] listOfVariants
+        table [ class "variants" ] variantsTable
