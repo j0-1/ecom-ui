@@ -9207,42 +9207,49 @@ var _user$project$Product$viewProduct = function (product) {
 		{
 			ctor: '::',
 			_0: A2(
-				_elm_lang$html$Html$span,
+				_elm_lang$html$Html$h2,
 				{ctor: '[]'},
 				{
 					ctor: '::',
-					_0: _elm_lang$html$Html$text('Product #'),
-					_1: {ctor: '[]'}
-				}),
-			_1: {
-				ctor: '::',
-				_0: A2(
-					_elm_lang$html$Html$span,
-					{ctor: '[]'},
-					{
-						ctor: '::',
-						_0: _elm_lang$html$Html$text(
-							_elm_lang$core$Basics$toString(product.id)),
-						_1: {ctor: '[]'}
-					}),
-				_1: {
-					ctor: '::',
-					_0: _user$project$Image$viewImageList(product.images),
+					_0: A2(
+						_elm_lang$html$Html$span,
+						{ctor: '[]'},
+						{
+							ctor: '::',
+							_0: _elm_lang$html$Html$text('Product #'),
+							_1: {ctor: '[]'}
+						}),
 					_1: {
 						ctor: '::',
 						_0: A2(
-							_elm_lang$html$Html$p,
+							_elm_lang$html$Html$span,
 							{ctor: '[]'},
 							{
 								ctor: '::',
-								_0: _elm_lang$html$Html$text(product.description),
+								_0: _elm_lang$html$Html$text(
+									_elm_lang$core$Basics$toString(product.id)),
 								_1: {ctor: '[]'}
 							}),
-						_1: {
+						_1: {ctor: '[]'}
+					}
+				}),
+			_1: {
+				ctor: '::',
+				_0: _user$project$Image$viewImageList(product.images),
+				_1: {
+					ctor: '::',
+					_0: A2(
+						_elm_lang$html$Html$p,
+						{ctor: '[]'},
+						{
 							ctor: '::',
-							_0: _user$project$Variant$viewVariantList(product.variants),
+							_0: _elm_lang$html$Html$text(product.description),
 							_1: {ctor: '[]'}
-						}
+						}),
+					_1: {
+						ctor: '::',
+						_0: _user$project$Variant$viewVariantList(product.variants),
+						_1: {ctor: '[]'}
 					}
 				}
 			}

@@ -37,8 +37,10 @@ getInventory msg url =
 viewProduct : Product -> Html msg
 viewProduct product =
     li []
-        [ span [] [ text "Product #" ]
-        , span [] [ text (toString product.id) ]
+        [ h2 []
+            [ span [] [ text "Product #" ]
+            , span [] [ text (toString product.id) ]
+            ]
         , Image.viewImageList product.images
         , p [] [ text product.description ]
         , Variant.viewVariantList product.variants
